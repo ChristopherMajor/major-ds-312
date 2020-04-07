@@ -1,1 +1,4 @@
+#ignoring artifacts from the package build process
 build/
+dist/
+*.egg-info
