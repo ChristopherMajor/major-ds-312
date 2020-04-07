@@ -1,0 +1,9 @@
+README.md
+setup.py
+major_ds_312.egg-info/PKG-INFO
+major_ds_312.egg-info/SOURCES.txt
+major_ds_312.egg-info/dependency_links.txt
+major_ds_312.egg-info/top_level.txt
+project/__init__.py
+project/modz.py
+project/my_script.py
