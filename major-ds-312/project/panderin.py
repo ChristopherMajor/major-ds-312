@@ -1,11 +1,12 @@
 import pandas
 
+
 def convert_names(dataframe):
     """
     changes 2 letter abbreviations to full state names
-    
-    params: dataframe(pandas.DataFrame) with column called "abbrev" which 
-            contains state abbreviations. 
+
+    params: dataframe(pandas.DataFrame) with column called "abbrev" which
+            contains state abbreviations.
 
     """
 
@@ -73,12 +74,13 @@ def convert_names(dataframe):
     
     return df
     
-df = pandas.DataFrame({'abbrev': ['CT', "CO", "CA","TX"]})
-full_df=convert_names(df)
-print(full_df)
 
-df2=pandas.DataFrame({'abbrev':['GA', 'NY', 'CA', 'CO']})
-full_df2=convert_names(df2)
-print(full_df2)
+if __name__=="main__":
 
-    
+    df = pandas.DataFrame({'abbrev': ['CT', "CO", "CA","TX"]})
+    full_df=convert_names(df)
+    print(full_df)
+
+    df2 = pandas.DataFrame({'abbrev':['GA', 'NY', 'CA', 'CO']})
+    full_df2 = convert_names(df2)
+    print(full_df2)
