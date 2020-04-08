@@ -62,13 +62,14 @@ def convert_names(dataframe):
         'WY': 'Wyoming'
  }
     df['state_name']= df['abbrev'].map(names_map)
+    
     return df
     
 df = pandas.DataFrame({'abbrev': ['CT', "CO", "CA","TX"]})
 full_df=convert_names(df)
-print(full_df.head())
+print(full_df)
 
 df2=pandas.DataFrame({'abbrev':['GA', 'NY', 'CA', 'CO']})
 full_df2=convert_names(df2)
-print(full_df2.head())
+print(full_df2)
     
